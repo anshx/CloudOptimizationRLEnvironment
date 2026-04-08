@@ -30,6 +30,7 @@ def calculate_step_reward(
     churn_penalty = 0.02 if is_noop else 0.0
 
     reward = cost_reward - hard_penalty - soft_penalty - churn_penalty
+    reward = max(0.0, min(1.0, reward))
     return round(reward, 4)
 
 
