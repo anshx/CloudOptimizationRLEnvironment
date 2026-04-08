@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.gstack/
+.claude/
+OpenEnv/
+openenv-course/
+docs/
+*.egg-info/
+dist/
+build/
+.env
